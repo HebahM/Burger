@@ -14,14 +14,6 @@ router.get("/", function(req, res){
     })
 });
 
-// router.get("/api/burgers", function(req, res){
-//     burger.all(function(data){
-//         var obj = {
-//             burgers: data
-//         }
-//         res.json(obj)
-//     })
-// })
 
 router.post("/api/burgers", function(req, res){
     burger.insertOne("burger_name", req.body.name, function (result){

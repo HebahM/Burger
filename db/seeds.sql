@@ -1,0 +1,1 @@
+INSERT INTO burgers (burger_name) VALUES ("Big Mac"), ("Whopper"), ("BBQ Cheddar"), ("Mango Habanero"), ("Chicken Burger"), ("Baconator")

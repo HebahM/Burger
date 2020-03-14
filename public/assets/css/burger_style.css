@@ -1,0 +1,42 @@
+body {
+    background-color: cadetblue;
+    font-family: 'Fjalla One', sans-serif;
+    color: darkred;
+    width: 80%;
+    margin: auto;
+}
+img{
+    display: block;
+    margin: 40px auto;
+}
+h1 {
+    text-align: center;
+}
+button {
+    background-color: darkslategray;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.25em;
+    margin: 10px;
+}
+form {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin-right: 15px;
+}
+#burgersToEat {
+    float: left;
+    width: 35%;
+}
+#burgersEaten {
+    float: right;
+    width: 35%;
+}
+#burgersEaten li {
+    line-height: 3em;
+}
+#form{
+    clear: both;
+}

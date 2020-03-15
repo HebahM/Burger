@@ -2,19 +2,22 @@ $(function () {
 
     $("#submit").on("click", function (event) {
         event.preventDefault();
+        var newBurger = {
+          name: $("#burger").val().trim()
+        }
         // alert("You clicked the submit button")
-        var input = $("#burger").val();
-        var newBurger = {burger_name: input};
-        console.log("newBurger: "+ JSON.stringify(newBurger))
-        console.log("input: "+ input)
+        // var input = $("#burger").val();
+        // var newBurger = {burger_name: input};
+        // console.log("newBurger: "+ JSON.stringify(newBurger))
+        // console.log("input: "+ input)
         $.ajax("/api/burgers", {
             type: "POST",
-            data: input
+            data: newBurger
           }).then(
             function() {
               console.log("added new burger");
               // Reload the page to get the updated list
-            //   location.reload();
+              location.reload();
             }
           );
     })

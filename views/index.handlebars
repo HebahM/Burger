@@ -1,49 +1,49 @@
 <img src="assets/img/burger.png" width="250px" height="200px">
 <h1>Eat Da Burger!</h1>
 
-
-<div id="burgersToEat">
-    <h3>Burgers To Eat</h3>
-
-    <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        <li class="undevoured" data-id="{{id}}">
-            {{id}}
-            {{burger_name}}
-
-
-            <button class="devour" data-id="{{this.id}}" data-name="{{this.burger_name}}">Devour!</button>
-        </li>
-        {{/unless}}
-        {{/each}}
-    </ul>
-
-</div>
-<div id="burgersEaten">
-    <h3>Burgers Eaten</h3>
-
-    <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        <li class="devoured" data-id="{{id}}">
-            {{id}}
-            {{burger_name}}
-
-            <button class="delete" data-id="{{this.id}}" data-name="{{this.burger_name}}">Delete</button>
-        </li>
-        {{/if}}
-        {{/each}}
-    </ul>
+<div id="main">
+    
+    <div id="burgersToEat">
+        <h3>Burgers To Eat</h3>
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li class="undevoured" data-id="{{id}}">
+                {{id}}
+                {{burger_name}}
 
 
-</div>
+                <button class="devour" data-id="{{this.id}}" data-name="{{this.burger_name}}">Devour!</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
 
-<div id="form">
-    <form>
-        <br><br>
-        <h3>Add a burger</h3><br>
-        <input type="text" id="burger" name="burgerName" size="30"><br><br>
-        <button id="submit">Submit</button>
-    </form>
+    </div>
+
+    <div id="form">
+        <form>
+            <br><br>
+            <h3>Add a burger</h3><br>
+            <input type="text" id="burger" name="burgerName" size="30"><br><br>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="burgersEaten">
+        <h3>Burgers Eaten</h3>
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li class="devoured" data-id="{{id}}">
+                {{id}}
+                {{burger_name}}
+
+                <button class="delete" data-id="{{this.id}}" data-name="{{this.burger_name}}">Delete</button>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
 </div>

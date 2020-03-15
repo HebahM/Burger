@@ -30,6 +30,12 @@ ul {
     float: left;
     width: 35%;
 }
+
+#form {
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+}
 #burgersEaten {
     float: right;
     width: 35%;
@@ -37,6 +43,11 @@ ul {
 #burgersEaten li {
     line-height: 3em;
 }
-#form{
+/* #form{
     clear: both;
+} */
+#main {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
 }

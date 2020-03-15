@@ -29,6 +29,8 @@
         <li class="devoured" data-id="{{id}}">
             {{id}}
             {{burger_name}}
+
+            <button class="delete" data-id="{{this.id}}" data-name="{{this.burger_name}}">Delete</button>
         </li>
         {{/if}}
         {{/each}}

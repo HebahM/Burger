@@ -25,6 +25,7 @@ form {
 ul {
     list-style-type: none;
     margin-right: 15px;
+    margin-left: -40px;
 }
 #burgersToEat {
     float: left;
@@ -39,13 +40,11 @@ ul {
 #burgersEaten {
     float: right;
     width: 35%;
+    margin-right: -50px;
 }
 #burgersEaten li {
     line-height: 3em;
 }
-/* #form{
-    clear: both;
-} */
 #main {
     width: 85%;
     margin-right: auto;
